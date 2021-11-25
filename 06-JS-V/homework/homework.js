@@ -36,15 +36,11 @@ function agregarStringInvertida() {
   // 'toni'.reverse() => 'inot'
   // Pista: Necesitarás usar "this" dentro de "reverse"
   String.prototype.reverse = function () {
-    var stringInvertida = '';
-    for(var i = this.length - 1; i >=0; i--) {
-      stringInvertida = stringInvertida + this.charAt(i);
+    var caracter = this.split("");
+    caracter.reverse();
+    return this.split("").reverse().join(""); 
     }
-    return stringInvertida;
-
-
-  }
-}
+    return "hola".reverse();
 
 // ---------------------------------------------------------------------------//
   //Crea el constructor de la clase "Persona"

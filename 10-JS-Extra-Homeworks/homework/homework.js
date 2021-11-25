@@ -94,10 +94,12 @@ function deleteAbc(cadena){
   //Define una función que elimine las letras "a", "b" y "c" de la cadena dada 
   //y devuelva la versión modificada o la misma cadena, en caso de contener dichas letras.
   //Escribe tu código aquí
-  cadena = cadena.replace("a", "");
-  cadena = cadena.replace("b", "");
-  cadena = cadena.replace("c", "");
-  return cadena; 
+  for(var i = 0; i < cadena.length; i++){
+  cadena[i] = cadena[i].replace("a", "");
+  cadena[i] = cadena[i].replace("b", "");
+  cadena[i] = cadena[i].replace("c", ""); 
+  }
+  return cadena;
 }
 
 
@@ -108,10 +110,10 @@ function sortArray(arr) {
   for(let i = 0; i < arr.length; i++){
   var a = i;
     while(a > 0){
-      if(string[a].length < string[a-1].length){
-        var aux = string[a];
-        string[a] = string[a-1];
-        string[a-1] = aux;
+      if(arr[a].length < arr[a-1].length){
+        var aux = arr[a];
+        arr[a] = arr[a-1];
+        arr[a-1] = aux;
       }
       a--;
     }
