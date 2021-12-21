@@ -171,13 +171,14 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
-  for(var i = 0; i < arreglo.length -1; i++) {
-    if(arreglo[i] === arreglo[i-1]) {
-      return true;
+  for(var i = 0; i < arreglo.length; i++) {
+    var resultado = true;
+    if(arreglo[i] != arreglo[i-1]) {
+      resultado = false;
+      break;
     }
   }
-  return false;
-  
+  return resultado;
 } 
 
 
@@ -209,7 +210,7 @@ function mayorACien(array) {
   // Tu código:
   let mayor = [];
   for(let i = 0; i < array.length; i++) {
-    if(array[i] > 101) {
+    if(array[i] > 100) {
       mayor.push(array[i]);
     }
    }
@@ -227,7 +228,7 @@ function breakStatement(numero) {
   // Tu código:
   var nuevoArray = [];
   var suma = numero;
-  for(var i = 0; i < 10; i++) {
+  for(var i = 0; i < 10; i++) { 
     suma = suma +2;
     if(suma === i) break;
     else {
