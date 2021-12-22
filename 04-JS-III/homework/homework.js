@@ -133,8 +133,8 @@ function cuentoElementos(arreglo){
   //Escribe tu código aquí
   let contador = 0;
   for(let i = 0; i < arreglo.length; i++) {
-    if(arreglo[i] > 19) {
-      contador++
+    if(arreglo[i] > 18) {
+      contador.push(arreglo[i]);
     }
   }
   return contador;
