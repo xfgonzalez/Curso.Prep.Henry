@@ -29,7 +29,7 @@ function incrementarPorUno(array) {
   // Tu código:
   var almacenarArray = [];
   for(var i = 0; i < array.length; i++) {
-    almacenarArray[i] = array[i] +1; 
+    almacenarArray[i] = array[i] +1;
   }
   return almacenarArray;
 }
