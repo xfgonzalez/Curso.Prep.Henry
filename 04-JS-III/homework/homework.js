@@ -134,7 +134,7 @@ function cuentoElementos(arreglo){
   let contador = 0;
   for(let i = 0; i < arreglo.length; i++) {
     if(arreglo[i] > 18) {
-      contador.push(arreglo[i]);
+      contador++;
     }
   }
   return contador;
@@ -171,8 +171,8 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
+  var resultado = true;
   for(var i = 0; i < arreglo.length; i++) {
-    var resultado = true;
     if(arreglo[i] != arreglo[i-1]) {
       resultado = false;
       break;
