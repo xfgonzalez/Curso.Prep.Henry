@@ -78,10 +78,10 @@ function capicua(numero){
   //La misma debe retornar: "Es capicua" si el número se número que se lee igual de 
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
-  if(numero === 464) {
+  if(numero === numero) {
     return "Es capicua";
   } else {
-  if(numero === 122) {
+  if(numero != numero) {
     return "No es capicua";
     }
   }
@@ -94,11 +94,9 @@ function deleteAbc(cadena){
   //Define una función que elimine las letras "a", "b" y "c" de la cadena dada 
   //y devuelva la versión modificada o la misma cadena, en caso de contener dichas letras.
   //Escribe tu código aquí
-  for(var i = 0; i < cadena.length; i++){
-  cadena[i] = cadena[i].replace("a", "");
-  cadena[i] = cadena[i].replace("b", "");
-  cadena[i] = cadena[i].replace("c", ""); 
-  }
+  cadena.replace("a", "");
+  cadena.replace("b", "");
+  cadena.replace("c", ""); 
   return cadena;
 }
 
