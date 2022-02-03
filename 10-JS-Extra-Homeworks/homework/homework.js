@@ -66,7 +66,7 @@ function asAmirror(str) {
   //Escribe tu código aquí
   var stringEnArray = str.split(" ");
   for(let i = 0; i < stringEnArray.length; i++) {
-    stringEnArray[i] = stringEnArray[i].split(" ").reverse().join(" ");
+    stringEnArray[i] = stringEnArray[i].split("").reverse().join("");
   }
   return stringEnArray.join(" ");
 
